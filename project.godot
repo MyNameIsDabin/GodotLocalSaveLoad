@@ -26,7 +26,7 @@ config/icon="res://icon.png"
 
 [autoload]
 
-SaveDataManager="*res://SaveDataManager.tscn"
+SaveDataManager="*res://SaveDataManager.gd"
 
 [rendering]
 
