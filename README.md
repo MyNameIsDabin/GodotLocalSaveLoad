@@ -64,6 +64,8 @@ func _on_compatible_version(loaded_version: int, current_version: int) -> void:
 ```
 위와같이 불러온 파일의 버전 코드와 현재 버전 코드 정보를 매개변수로 전달받을 수 있습니다.
 
+[!]주의 : 해당 시그널은 load_data() 함수에서 호출하기 때문에, 데이터를 불러오기 직전에 시그널을 연결해둔 상태여야 합니다.
+
 ### 옵션 2. 예전버전의 데이터를 무시하고 무조건 현재 버전의 데이터 값으로 불러오기
 ```
 const exclude_values := ["version_code"]
